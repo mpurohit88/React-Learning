@@ -9,11 +9,14 @@ import CompositionComponent from './CompositionComponent';
 import StateManagement from './StateManagement';
 import Website from './Website/Website';
 import Clock from './LifeCycle';
-
+import Chats from './GetSnapshotBeforeUpdate';
+import ReactDom from './ReactDom';
+import DynamicElement from './DynamicElement';
 import Header from './Header';
+
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<Website />, document.getElementById('root'));
+ReactDOM.render(<DynamicElement />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
