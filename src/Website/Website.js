@@ -9,8 +9,8 @@ import Footer from './Footer';
 export default function Website() {
   return (
     <div>
-      <Header /> <br />
-      <Body />
+      <Header /> <br /><br />
+      <Body /><br /><br />
       <Footer />
     </div>
   )

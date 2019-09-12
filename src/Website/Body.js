@@ -33,8 +33,8 @@ export default class Body extends React.Component {
 
   render() {
     return <Fragment className="color">
-      <input type="text" id="name" onChange={this.handleOnChange} />
-      <Label text={`Welcome, ${this.state.value}`} />
+      <input type="text" id="name" onChange={this.handleOnChange} /><br /><br />
+      <Label text={`Welcome, ${this.state.value}`} /><br /><br />
 
       <select>
         <option>Select</option>

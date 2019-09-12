@@ -11,7 +11,7 @@ export default class ReactDom extends React.Component {
 
     setTimeout(() => {
       this.setState({ status: 1 });
-    }, 1000);
+    }, 2000);
   }
 
   handleAge = () => {
@@ -23,9 +23,9 @@ export default class ReactDom extends React.Component {
   render() {
     return (
       <React.Fragment>
-        Hi, this is ReactDom <br /> <br />
-        This is my Age: {this.state.age} <br /> <br />
-        This is my Status: {this.state.status} <br /> <br />
+        <label>Hi, this is ReactDom</label> <br /> <br />
+        <label>This is my Age: {this.state.age}</label> <br /> <br />
+        <label>This is my Status: {this.state.status}</label> <br /> <br />
 
         <button onClick={this.handleAge}>Make me Old!</button>
       </React.Fragment>
