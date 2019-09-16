@@ -1,10 +1,9 @@
 import React from 'react';
 import { Link, Route } from 'react-router-dom';
 
-function Contact({ match, location, history }) {
+import Contacts from './Contacts';
 
-  console.log("match....", match);
-  console.log("location....", location);
+function Contact({ match, location, history }) {
 
   return (
     <div className="App">
@@ -16,7 +15,7 @@ function Contact({ match, location, history }) {
             })
           }
         </ul>
-        <Route path={`${match.url}/:number`} />
+        <Route path={`${match.url}/:number`} component={Contacts} />
       </header>
     </div>
   );
