@@ -9,7 +9,7 @@ function Contacts({ match, location, history }) {
   return (
     <div className="App">
       <header className="App-header">
-        <h2>Child Component</h2>
+        <h2>Child Component {match.params.number}</h2>
       </header>
     </div>
   );
