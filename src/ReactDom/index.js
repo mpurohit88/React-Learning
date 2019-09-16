@@ -22,13 +22,13 @@ export default class ReactDom extends React.Component {
 
   render() {
     return (
-      <React.Fragment>
+      <>
         <label>Hi, this is ReactDom</label> <br /> <br />
         <label>This is my Age: {this.state.age}</label> <br /> <br />
         <label>This is my Status: {this.state.status}</label> <br /> <br />
 
         <button onClick={this.handleAge}>Make me Old!</button>
-      </React.Fragment>
+      </>
     )
   }
 }
